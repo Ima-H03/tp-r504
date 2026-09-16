@@ -16,10 +16,10 @@ jobs:
         run: python -m pip install pytest
 
       - name: Afficher la branche
-        run: echo "Nom branche: ${{ github.ref }}"
+        run: echo "Nom branche:${{ github.ref }}"
 
       - name: Afficher le système
-        run: echo "Nom OS: ${{ github.os }}."
+        run: echo "Nom OS:${{ github.os }}."
 
       - name: Run tests
         run: pytest TP1/test.py
